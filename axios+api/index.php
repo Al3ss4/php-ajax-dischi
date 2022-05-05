@@ -20,8 +20,17 @@
         <main>
             <div class="container">
                 <div class="row">
-                    <div class="col-3 p-3 text-center" >
-                      
+                    <div class="col-3 p-3 text-center" v-for='album in albums'>
+                        <img :src="album.poster" :alt="album.title" class="w-75" >
+                        <h4 class="m-3">
+                            {{album.title}}
+                        </h4>
+                        <p class="m-0">
+                        {{album.author}}
+                        </p>
+                        <p>
+                            {{album.year}}
+                        </p>
                     </div>
                 </div>
             </div>

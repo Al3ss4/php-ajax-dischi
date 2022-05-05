@@ -26,7 +26,7 @@ include __DIR__ . '../database/db.php';
             
             <?php foreach($albums as $album) { ?>
               
-                <div class=" album col-3 p-3 text-center">
+                <div class="col-3 p-3 text-center">
 
                     <img src="<?php echo $album['poster'] ?>" alt="img" class="w-100" >
                     <h4 class="m-3">    
