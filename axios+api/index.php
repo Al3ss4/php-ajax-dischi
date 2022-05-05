@@ -13,41 +13,20 @@
     <title>php-ajax-dischi</title>
 </head>
 <body>
-    <header>
-    <img src="https://www.resetfestival.it/wp-content/uploads/2017/07/spotify-logo-big-test.jpg" alt="logo">
-    </header>
-    <main>
-<div class="container">
-        <div class="row">
-            
-            <?php foreach($albums as $album) { ?>
-              
-                <div class=" album col-3 p-3 text-center">
-
-                    <img src="<?php echo $album['poster'] ?>" alt="img" class="w-100" >
-                    <h4 class="m-3">    
-                        <?php echo $album['title'] ?>
-                    </h4>
-                    <p class="m-0">
-                        <?php echo $album['author'] ?>
-                    </p>
-                    <p>
-                        <?php echo $album['year'] ?>
-                    </p>
-                    
+    <div id="app">
+        <header>
+            <img src="https://www.resetfestival.it/wp-content/uploads/2017/07/spotify-logo-big-test.jpg" alt="logo">
+        </header>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 p-3 text-center" >
+                      
+                    </div>
                 </div>
-
-
-
-
-                
-            <?php } ?>
-            
-        </div>
-        
+            </div>
+        </main>
     </div>
-    </main>
-
-    
+    <script src="script/script.js"></script>
 </body>
 </html>
