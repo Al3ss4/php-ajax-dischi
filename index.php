@@ -17,17 +17,22 @@ include __DIR__ . '../database/db.php';
     <title>php-ajax-dischi</title>
 </head>
 <body>
+    <header>
+    <img src="https://www.resetfestival.it/wp-content/uploads/2017/07/spotify-logo-big-test.jpg" alt="logo">
+    </header>
+    <main>
 <div class="container">
         <div class="row">
+            
             <?php foreach($albums as $album) { ?>
+              
+                <div class=" album col-3 p-3 text-center">
 
-                <div class="col">
-
-                    <img src="<?php echo $album['poster'] ?>" alt="img" class="w-25" >
-                    <h3>    
+                    <img src="<?php echo $album['poster'] ?>" alt="img" class="w-100" >
+                    <h4 class="m-3">    
                         <?php echo $album['title'] ?>
-                    </h3>
-                    <p>
+                    </h4>
+                    <p class="m-0">
                         <?php echo $album['author'] ?>
                     </p>
                     <p>
@@ -39,12 +44,15 @@ include __DIR__ . '../database/db.php';
 
 
 
-
+                
             <?php } ?>
+            
         </div>
-
+        
     </div>
+    </main>
 
+    <footer></footer>
     
 </body>
 </html>
