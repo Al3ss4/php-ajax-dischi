@@ -1,6 +1,6 @@
 <?php
 
-$songs = [
+$albums = [
     [
         'author' => "Bon Jovi",
         'genre' => "Rock",
